@@ -1,3 +1,33 @@
+:root{
+    --bg: #121212;
+    --filled-bg-left: #FD6F00;
+    --filled-bg-right: #E46400;
+    --white: #ffffff;
+}
 body,html{
-    background-color: #121212;
+    background-color: var(--bg);
+}
+button{
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.filled{
+    background: linear-gradient(to bottom right,var(--filled-bg-left),var(--filled-bg-right));
+    text-align: center;
+    padding: 10px;
+    color: var(--white);
+}
+.filled:hover{
+    background: var(--white);
+    color: var(--filled-bg-right);
+}
+.transparent{
+    background-color: inherit;
+}
+
+@media only screen and (max-width:390px){
+    .filled{
+        padding:7px;
+    }
 }
