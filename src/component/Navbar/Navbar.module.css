@@ -1,60 +1,63 @@
-:root{
-    --linear-title-bg-left: #FA6E00;
-    --linear-title-bg-right: #E60026;
-    --active: #FD6F00;
-    --inactive: #959595;
+:root {
+  --linear-title-bg-left: #fa6e00;
+  --linear-title-bg-right: #e60026;
+  --active: #fd6f00;
+  --inactive: #959595;
 }
-.navbarContainer{
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+.navbarContainer {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
-.menuList{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    padding: 10px;
+.menuList {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding: 10px;
 }
-.menu{
-    display: none;
-    position: relative;
+.menu {
+  display: none;
+  position: relative;
 }
-.logo{
-    background: linear-gradient(var(--linear-title-bg-left),var(--linear-title-bg-right));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-weight: bold;
-    font-size: 1.5rem;
+.logo {
+  background: linear-gradient(
+    var(--linear-title-bg-left),
+    var(--linear-title-bg-right)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
-.actionContainer{
-    display: flex;
-    padding: 0;
-    gap: 20px;
-    font-size: large;
+.actionContainer {
+  display: flex;
+  padding: 0;
+  gap: 20px;
+  font-size: large;
 }
-.activeSection{
-    color: var(--active);
-    font-weight: bold;
-    list-style: none;
+.activeSection {
+  color: var(--active);
+  font-weight: bold;
+  list-style: none;
 }
-.inActiveSection{
-    color: var(--inactive);
-    list-style: none;
+.inActiveSection {
+  color: var(--inactive);
+  list-style: none;
 }
-.inActiveSection:hover{
-    color: var(--active);
+.inActiveSection:hover {
+  color: var(--active);
 }
 
-@media only screen and (max-width:630px){
-    .actionContainer{
-        display:none;
-    }
-    .menu{
-        display: inline-block;
-    }
+@media only screen and (max-width: 630px) {
+  .actionContainer {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+  }
 }
