@@ -9,23 +9,7 @@ type Action = typeof ACTION[keyof typeof ACTION];
 const ListItem = () => {
   const [active,setActive] = useState<Action>(ACTION.HOME)
   function handleActionClick(activeAction:Action){
-    switch (activeAction){
-      case ACTION.ABOUT:{
-        setActive(ACTION.ABOUT);
-        break;
-      }
-      case ACTION.CONTACT:{
-        setActive(ACTION.CONTACT);
-        break;
-      }
-      case ACTION.PROJECT:{
-        setActive(ACTION.PROJECT);
-        break;
-      }
-      case ACTION.HOME:{
-        setActive(ACTION.HOME);
-      }
-    }
+    setActive(activeAction);
   }
   return (
     <>

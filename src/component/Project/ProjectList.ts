@@ -3,7 +3,7 @@ import placement from "../../assets/placements.jpg";
 import booknook from "../../assets/bookNook.jpeg";
 import voicelang from "../../assets/voicelang.jpeg";
 import paint from "../../assets/paint.jpg";
-interface Project {
+export interface Project {
   id: number;
   title: string;
   description: string;
