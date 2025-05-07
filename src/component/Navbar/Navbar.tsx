@@ -1,8 +1,8 @@
 import styles from "./Navbar.module.css";
 import Button from "../Button/Button";
 import menu from "../../assets/Hamburger-menu.svg";
-import resume from "../../assets/resume.txt";
 import { useState } from "react";
+import ResumeDownload from "../ResumeDownload/ResumeDownload";
 
 const ListItem = () => {
   return (
@@ -46,11 +46,7 @@ const Navbar = () => {
         <ListItem />
       </ul>
       <div>
-        <Button variant="filled" title="Download Resume">
-          <a href={resume} download>
-            Resume
-          </a>
-        </Button>
+        <ResumeDownload/>
       </div>
     </div>
   );
