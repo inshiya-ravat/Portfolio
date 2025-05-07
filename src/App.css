@@ -1,8 +1,16 @@
 :root {
   --bg: #121212;
-  --filled-bg-left: #fd6f00;
-  --filled-bg-right: #e46400;
+  --primary-orange: #fd6f00;
+  --secondary-orange: #e46400;
   --white: #ffffff;
+  --gap-medium: 20px;
+  --gap-small: 10px;
+  --border-radius: 8px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body,
 html {
@@ -10,7 +18,7 @@ html {
 }
 button {
   border: none;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   font-weight: bold;
 }
 a {
@@ -20,11 +28,11 @@ a {
 .filled {
   background: linear-gradient(
     to bottom right,
-    var(--filled-bg-left),
-    var(--filled-bg-right)
+    var(--primary-orange),
+    var(--secondary-orange)
   );
   text-align: center;
-  padding: 10px;
+  padding: var(--gap-small);
   color: var(--white);
 }
 .filled:hover {

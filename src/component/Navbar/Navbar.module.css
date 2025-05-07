@@ -1,7 +1,6 @@
 :root {
   --linear-title-bg-left: #fa6e00;
   --linear-title-bg-right: #e60026;
-  --active: #fd6f00;
   --inactive: #959595;
 }
 .navbarContainer {
@@ -12,12 +11,13 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  margin-top: var(--gap-medium);
 }
 .menuList {
   position: absolute;
   top: 0%;
   left: 0%;
-  padding: 10px;
+  padding: var(--gap-small);
 }
 .menu {
   display: none;
@@ -37,11 +37,11 @@
 .actionContainer {
   display: flex;
   padding: 0;
-  gap: 20px;
+  gap: var(--gap-medium);
   font-size: large;
 }
 .activeSection {
-  color: var(--active);
+  color: var(--primary-orange);
   font-weight: bold;
   list-style: none;
 }
@@ -50,7 +50,7 @@
   list-style: none;
 }
 .inActiveSection:hover {
-  color: var(--active);
+  color: var(--primary-orange);
 }
 
 @media only screen and (max-width: 630px) {
