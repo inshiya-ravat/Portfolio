@@ -10,7 +10,7 @@
   --gap-small: 10px;
   --border-radius: 8px;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,21 +44,28 @@ a {
   background: var(--white);
   color: var(--secondary-orange);
 }
-.outlined{
+.outlined {
   border: 2px solid var(--white);
   background-color: inherit;
   padding: var(--gap-small);
 }
-.outlined:hover{
+.outlined:hover {
   background-color: var(--white);
   color: var(--bg);
 }
 .transparent {
   background-color: inherit;
 }
+.transparent-close {
+  background-color: inherit;
+  position: absolute;
+  top: 2%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+}
 
 @media only screen and (max-width: 390px) {
-  .filled {
+  .filled, .outlined {
     padding: 7px;
   }
 }

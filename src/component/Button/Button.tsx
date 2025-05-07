@@ -1,6 +1,11 @@
 import React from "react";
 
-export type Variant= "filled" | "outlined" | "filled-inactive" | "transparent";
+export type Variant =
+  | "filled"
+  | "outlined"
+  | "filled-inactive"
+  | "transparent"
+  | "transparent-close";
 interface ButtonProps extends React.HtmlHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   variant?: Variant;

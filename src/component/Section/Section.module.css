@@ -1,0 +1,7 @@
+.section {
+  text-align: center;
+  margin-top: var(--gap-large);
+}
+.section h2{
+    margin-bottom: var(--gap-large);
+}

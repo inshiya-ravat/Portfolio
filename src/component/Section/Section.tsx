@@ -1,16 +1,18 @@
-import { type ReactNode } from 'react'
+import { type ReactNode } from "react";
+import styles from './Section.module.css';
 
-interface SectionProps{
-    heading:string,
-    children: ReactNode,
+interface SectionProps {
+  id:string;
+  heading: string;
+  children: ReactNode;
 }
-const Section = ({heading,children}:SectionProps) => {
+const Section = ({ heading, id, children }: SectionProps) => {
   return (
-    <section>
-        <h2>{heading}</h2>
-        {children}
+    <section id={id} className={styles.section}>
+      <h2>{heading}</h2>
+      {children}
     </section>
-  )
-}
+  );
+};
 
-export default Section
+export default Section;
