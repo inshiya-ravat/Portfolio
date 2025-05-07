@@ -3,21 +3,27 @@ import Button from "../Button/Button";
 import menu from "../../assets/Hamburger-menu.svg";
 import { useState } from "react";
 import ResumeDownload from "../ResumeDownload/ResumeDownload";
+import { ACTION } from "../../Constants/Constants";
 
+type Action = typeof ACTION[keyof typeof ACTION];
 const ListItem = () => {
+  const [active,setActive] = useState<Action>(ACTION.HOME)
+  function handleActionClick(activeAction:Action){
+    setActive(activeAction);
+  }
   return (
     <>
-      <li className={styles.activeSection}>
-        <a href="#">Home</a>
+      <li className={active === ACTION.HOME ? styles.activeSection : styles.inActiveSection}>
+        <a onClick={()=>handleActionClick(ACTION.HOME)} href="#">Home</a>
       </li>
-      <li className={styles.inActiveSection}>
-        <a href="#">About me</a>
+      <li className={active === ACTION.ABOUT ? styles.activeSection : styles.inActiveSection}>
+        <a onClick={()=>handleActionClick(ACTION.ABOUT)} href="#">About me</a>
       </li>
-      <li className={styles.inActiveSection}>
-        <a href="#">Projects</a>
+      <li className={active === ACTION.PROJECT ? styles.activeSection : styles.inActiveSection}>
+        <a onClick={()=>handleActionClick(ACTION.PROJECT)} href="#project">Projects</a>
       </li>
-      <li className={styles.inActiveSection}>
-        <a href="#">Contact me</a>
+      <li className={active === ACTION.CONTACT ? styles.activeSection : styles.inActiveSection}>
+        <a onClick={()=>handleActionClick(ACTION.CONTACT)} href="#">Contact me</a>
       </li>
     </>
   );

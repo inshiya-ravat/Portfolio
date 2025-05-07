@@ -12,9 +12,12 @@
 }
 .menuList {
   position: absolute;
-  top: 0%;
+  top: 50%;
   left: 0%;
+  width: max-content;
   padding: var(--gap-small);
+  background: var(--dark-grey);
+  border-radius: var(--border-radius);
 }
 .menu {
   display: none;

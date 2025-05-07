@@ -24,10 +24,12 @@
     background-color: var(--dark-grey);
     border: 1px solid var(--white);
     border-radius: 50%;
-    padding: 5px;
+    padding:5px;
+    width: fit-content;
 }
 .socialLinks img{
     vertical-align: middle;
+    margin: 0;
 }
 .actionContainer button{
     margin-right: var(--gap-medium);
