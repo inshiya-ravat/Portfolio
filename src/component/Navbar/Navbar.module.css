@@ -36,7 +36,6 @@
 }
 .actionContainer {
   display: flex;
-  padding: 0;
   gap: var(--gap-medium);
   font-size: large;
 }
