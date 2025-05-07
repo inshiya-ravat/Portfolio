@@ -14,16 +14,16 @@ const ListItem = () => {
   return (
     <>
       <li className={active === ACTION.HOME ? styles.activeSection : styles.inActiveSection}>
-        <a onClick={()=>handleActionClick(ACTION.HOME)} href="#">Home</a>
+        <a onClick={()=>handleActionClick(ACTION.HOME)} href="#home">Home</a>
       </li>
       <li className={active === ACTION.ABOUT ? styles.activeSection : styles.inActiveSection}>
-        <a onClick={()=>handleActionClick(ACTION.ABOUT)} href="#">About me</a>
+        <a onClick={()=>handleActionClick(ACTION.ABOUT)} href="#about">About me</a>
       </li>
       <li className={active === ACTION.PROJECT ? styles.activeSection : styles.inActiveSection}>
         <a onClick={()=>handleActionClick(ACTION.PROJECT)} href="#project">Projects</a>
       </li>
       <li className={active === ACTION.CONTACT ? styles.activeSection : styles.inActiveSection}>
-        <a onClick={()=>handleActionClick(ACTION.CONTACT)} href="#">Contact me</a>
+        <a onClick={()=>handleActionClick(ACTION.CONTACT)} href="#contact">Contact me</a>
       </li>
     </>
   );
@@ -46,7 +46,7 @@ const Navbar = () => {
         )}
       </div>
       <div>
-        <p className={styles.logo}>INSHIYA RAVAT</p>
+        <p id="home" className={styles.logo}>INSHIYA RAVAT</p>
       </div>
       <ul className={styles.actionContainer}>
         <ListItem />

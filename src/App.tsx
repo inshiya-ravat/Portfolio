@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./component/About/About";
 import BasicInfo from "./component/BasicInfo/BasicInfo";
+import Contact from "./component/Contact/Contact";
 import Navbar from "./component/Navbar/Navbar";
 import Project from "./component/Project/Project";
 
@@ -11,6 +12,7 @@ function App() {
       <BasicInfo/>
       <Project/>
       <About/>
+      <Contact/>
     </>
   );
 }
