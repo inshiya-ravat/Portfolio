@@ -8,28 +8,34 @@ interface TableProp {
 const Table = ({ list }: TableProp) => {
   return (
     <table className={styles.table}>
-      {list.map((listItem) => {
-        if ("institute" in listItem) {
-          return (
-            <tr>
-              <td className={styles.duration}>{listItem.duration}</td>
-              <td>
-                <div>
-                  <b>{listItem.institute}</b>
-                  {listItem.cpi && <b>, cpi: {listItem.cpi}</b>}
-                </div>
-              </td>
-            </tr>
-          );
-        } else {
-          return (
-            <tr>
-              <td className={styles.duration}>{listItem.duration}</td>
-              <td><b>{listItem.role}, {listItem.company}</b></td>
-            </tr>
-          );
-        }
-      })}
+      <tbody>
+        {list.map((listItem) => {
+          if ("institute" in listItem) {
+            return (
+              <tr>
+                <td className={styles.duration}>{listItem.duration}</td>
+                <td>
+                  <div>
+                    <b>{listItem.institute}</b>
+                    {listItem.cpi && <b>, cpi: {listItem.cpi}</b>}
+                  </div>
+                </td>
+              </tr>
+            );
+          } else {
+            return (
+              <tr>
+                <td className={styles.duration}>{listItem.duration}</td>
+                <td>
+                  <b>
+                    {listItem.role}, {listItem.company}
+                  </b>
+                </td>
+              </tr>
+            );
+          }
+        })}
+      </tbody>
     </table>
   );
 };
