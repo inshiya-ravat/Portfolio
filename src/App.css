@@ -39,6 +39,7 @@ a {
   text-align: center;
   padding: var(--gap-small);
   color: var(--white);
+  cursor: pointer;
 }
 .filled:hover {
   background: var(--white);
@@ -55,6 +56,7 @@ a {
 }
 .transparent {
   background-color: inherit;
+  cursor: pointer;
 }
 .transparent-close {
   background-color: inherit;
@@ -62,10 +64,12 @@ a {
   top: 2%;
   right: 0%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 390px) {
-  .filled, .outlined {
+  .filled,
+  .outlined {
     padding: 7px;
   }
 }

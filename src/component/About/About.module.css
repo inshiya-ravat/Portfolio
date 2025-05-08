@@ -1,0 +1,49 @@
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+}
+.desc {
+  width: 50%;
+  margin: auto 0;
+}
+.hobbies{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-small);
+}
+.hobby{
+    background-color: var(--primary-orange);
+    color: var(--white);
+    width: fit-content;
+    border-radius: var(--border-radius);
+    padding: var(--gap-small);
+}
+.hobby p{
+    margin:0
+}
+
+/* Education */
+.table{
+  margin: 0 auto;
+  text-align: start;
+}
+.table td{
+  padding: var(--gap-medium);
+}
+.duration{
+  border-right: 4px solid var(--primary-orange);
+}
+
+@media only screen and (max-width: 700px) {
+  .photo {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .photo {
+    display: none;
+  }
+  .desc {
+    width: 100%;
+  }
+}

@@ -2,10 +2,11 @@ import Section from "../Section/Section";
 import { projects } from "./ProjectList";
 import styles from "./Project.module.css";
 import VideoDialog from "./VideoDialog";
+import { ACTION } from "../../Constants/Constants";
 
 const Project = () => {
   return (
-    <Section heading="Projects" id="project">
+    <Section heading="Projects" id={ACTION.PROJECT}>
       <ul className={styles.porjects}>
         {projects.map((project) => (
           <li className={styles.project}>
