@@ -7,12 +7,12 @@ interface ExperienceRowProp {
 const ExperienceRow = ({ listItem }: ExperienceRowProp) => {
   return (
     <tr>
-      <td className={styles.duration}>{listItem.duration}</td>
-      <td>
+      <td className={styles.duration}>
         <b>
           {listItem.role}, {listItem.company}
         </b>
       </td>
+      <td>{listItem.duration}</td>
     </tr>
   );
 };
