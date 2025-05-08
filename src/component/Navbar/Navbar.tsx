@@ -3,31 +3,9 @@ import Button from "../Button/Button";
 import menu from "../../assets/Hamburger-menu.svg";
 import { useState } from "react";
 import ResumeDownload from "../ResumeDownload/ResumeDownload";
+import { ListItem } from "./ListItem";
 import { ACTION } from "../../Constants/Constants";
 
-type Action = typeof ACTION[keyof typeof ACTION];
-const ListItem = () => {
-  const [active,setActive] = useState<Action>(ACTION.HOME)
-  function handleActionClick(activeAction:Action){
-    setActive(activeAction);
-  }
-  return (
-    <>
-      <li className={active === ACTION.HOME ? styles.activeSection : styles.inActiveSection}>
-        <a onClick={()=>handleActionClick(ACTION.HOME)} href="#home">Home</a>
-      </li>
-      <li className={active === ACTION.ABOUT ? styles.activeSection : styles.inActiveSection}>
-        <a onClick={()=>handleActionClick(ACTION.ABOUT)} href="#about">About me</a>
-      </li>
-      <li className={active === ACTION.PROJECT ? styles.activeSection : styles.inActiveSection}>
-        <a onClick={()=>handleActionClick(ACTION.PROJECT)} href="#project">Projects</a>
-      </li>
-      <li className={active === ACTION.CONTACT ? styles.activeSection : styles.inActiveSection}>
-        <a onClick={()=>handleActionClick(ACTION.CONTACT)} href="#contact">Contact me</a>
-      </li>
-    </>
-  );
-};
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   function handleMenu() {
@@ -46,10 +24,10 @@ const Navbar = () => {
         )}
       </div>
       <div>
-        <p id="home" className={styles.logo}>INSHIYA RAVAT</p>
+        <p id="home" className="logo">INSHIYA RAVAT</p>
       </div>
       <ul className={styles.actionContainer}>
-        <ListItem />
+        <ListItem current={ACTION.HOME}/>
       </ul>
       <div>
         <ResumeDownload/>

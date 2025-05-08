@@ -23,17 +23,6 @@
   display: none;
   position: relative;
 }
-.logo {
-  background: linear-gradient(
-    var(--linear-title-bg-left),
-    var(--linear-title-bg-right)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
 .actionContainer {
   display: flex;
   gap: var(--gap-medium);
