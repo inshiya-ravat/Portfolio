@@ -23,7 +23,7 @@ const About = () => {
           <p>Talk to me about: </p>
           <div className={styles.hobbies}>
             {Hobbies.map((hobby) => (
-              <div className={styles.hobby}>
+              <div key={hobby} className={styles.hobby}>
                 <p>{hobby}</p>
               </div>
             ))}
