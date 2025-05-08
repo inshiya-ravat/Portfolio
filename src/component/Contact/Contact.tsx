@@ -8,7 +8,7 @@ const Contact = () => {
     const emailRef = useRef<HTMLInputElement>(null);
     const queryRef = useRef<HTMLTextAreaElement>(null);
   return (
-    <Section heading='Contace Me' id={ACTION.CONTACT}>
+    <Section heading='Contact Me' id={ACTION.CONTACT}>
         <form>
             <input className={styles.input} placeholder="name" type="text"/>
             <input className={styles.input} placeholder='Phone Number' type='number'/>
