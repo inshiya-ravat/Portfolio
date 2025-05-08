@@ -9,13 +9,13 @@ const Project = () => {
     <Section heading="Projects" id={ACTION.PROJECT}>
       <ul className={styles.porjects}>
         {projects.map((project) => (
-          <li className={styles.project}>
+          <li key={project.id} className={styles.project}>
             <h3 className={styles.title}>{project.title}</h3>
             <p>{project.description}</p>
             <ul className={styles.tech}>
               <p>Technologies used: </p>
-              {project.tech.map((technology) => (
-                <li>{technology}</li>
+              {project.tech.map((technology,index) => (
+                <li key={index}>{technology}</li>
               ))}
             </ul>
             {project.video && (

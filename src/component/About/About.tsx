@@ -1,11 +1,11 @@
 import Section from "../Section/Section";
 import { ACTION } from "../../Constants/Constants";
 import photo from "../../assets/nobg.png";
-import styles from './About.module.css';
+import styles from "./About.module.css";
 import Education from "./Education.tsx";
 import Experience from "./Experience.tsx";
 
-const Hobbies = ['Music','Painting','React','Blockchain','Java','Movies']
+const Hobbies = ["Music", "Painting", "React", "Blockchain", "Java", "Movies"];
 const About = () => {
   return (
     <Section heading="About Me" id={ACTION.ABOUT}>
@@ -22,18 +22,18 @@ const About = () => {
           </p>
           <p>Talk to me about: </p>
           <div className={styles.hobbies}>
-            {
-              Hobbies.map((hobby)=>(
-                <div className={styles.hobby}>
-                  <p>{hobby}</p>
-                </div>
-              ))
-            }
+            {Hobbies.map((hobby) => (
+              <div key={hobby} className={styles.hobby}>
+                <p>{hobby}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-      <Education/>
-      <Experience/>
+      <div className={styles.educationAndExperience}>
+        <Education />
+        <Experience />
+      </div>
     </Section>
   );
 };

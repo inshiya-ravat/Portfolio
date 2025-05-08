@@ -7,7 +7,7 @@ export type Experience = {
 export const experience:Experience[]=[
     {
         id:1,
-        duration : '2025-2025',
+        duration : '2025-present',
         company: 'Simform',
         role: 'Software Engineer',
     }

@@ -1,0 +1,10 @@
+.input{
+    background-color: var(--dark-grey);
+    color: var(--white);
+    padding: var(--gap-small);
+    display: block;
+    border: none;
+    border-radius: var(--border-radius);
+    margin: var(--gap-small) auto;
+    width: 50%;
+}
