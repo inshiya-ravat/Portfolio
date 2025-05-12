@@ -10,7 +10,7 @@ const Footer = () => {
         INSHIYA RAVAT
       </p>
       <div className={styles.listItems}>
-        <ListItem current={ACTION.CONTACT} />
+        <ListItem classname="listItems" current={ACTION.CONTACT} />
       </div>
       <div className={styles.social}>
         <SocialLink />

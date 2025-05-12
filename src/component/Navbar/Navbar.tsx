@@ -17,20 +17,16 @@ const Navbar = () => {
         <Button onClick={handleMenu} variant="transparent">
           <img src={menu} alt="hamburger menu" />
         </Button>
-        {isMenuOpen && (
-          <ul className={styles.menuList}>
-            <ListItem />
-          </ul>
-        )}
+        {isMenuOpen && <ListItem classname="menuList" current={ACTION.HOME} />}
       </div>
       <div>
-        <p id="home" className="logo">INSHIYA RAVAT</p>
+        <p id="home" className="logo">
+          INSHIYA RAVAT
+        </p>
       </div>
-      <ul className={styles.actionContainer}>
-        <ListItem current={ACTION.HOME}/>
-      </ul>
+      <ListItem classname="actionContainer" current={ACTION.HOME} />
       <div>
-        <ResumeDownload/>
+        <ResumeDownload />
       </div>
     </div>
   );

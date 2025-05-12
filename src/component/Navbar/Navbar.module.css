@@ -10,23 +10,9 @@
   width: 100%;
   margin-top: var(--gap-medium);
 }
-.menuList {
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  width: max-content;
-  padding: var(--gap-small);
-  background: var(--dark-grey);
-  border-radius: var(--border-radius);
-}
 .menu {
   display: none;
   position: relative;
-}
-.actionContainer {
-  display: flex;
-  gap: var(--gap-medium);
-  font-size: large;
 }
 .activeSection {
   color: var(--primary-orange);
