@@ -1,0 +1,17 @@
+.footer{
+    text-align: center;
+    background-color: var(--dark-grey);
+    margin-bottom: 0;
+    padding: var(--gap-large);
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.mail{
+    color: var(--primary-orange);
+    text-decoration: underline;
+}
+.copyright{
+    margin-bottom: 0;
+}
