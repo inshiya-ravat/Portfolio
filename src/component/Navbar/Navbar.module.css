@@ -51,6 +51,11 @@
 .inActiveSection:hover {
   color: var(--primary-orange);
 }
+.actionContainer{
+  display: flex;
+  gap: var(--gap-medium);
+  font-size: large;
+}
 
 @media only screen and (max-width: 630px) {
   .actionContainer {

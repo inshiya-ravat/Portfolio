@@ -11,7 +11,7 @@ const Contact = () => {
     <Section heading='Contact Me' id={ACTION.CONTACT}>
         <form>
             <input className={styles.input} placeholder="name" type="text"/>
-            <input className={styles.input} placeholder='Phone Number' type='number'/>
+            <input className={styles.input} placeholder='Phone Number' type='tel'/>
             <input className={styles.input} placeholder='Email' ref={emailRef} type='email'/>
             <textarea className={styles.input} placeholder='Query' ref={queryRef}/>
             <Button type='submit' variant='outlined'>
